@@ -21,7 +21,7 @@ const inter = Inter({ subsets: [ 'latin' ] })
 
 export const metadata: Metadata = {
   metadataBase: new URL(constants.baseUrl),
-  title: 'Betting Example',
+  title: title: 'Spor-Bet',
   description: '',
 }
 
@@ -42,7 +42,7 @@ export default async function RootLayout({
                   (appChains.find(chain => chain.id === +_initialChainId)?.id as ChainId) || constants.defaultChain.id
 
   return (
-    <html lang="en">
+    <html lang="tr">
       <body className={inter.className}>
         <Providers
           // initialState={initialState}
